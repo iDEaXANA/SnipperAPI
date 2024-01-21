@@ -2588,19 +2588,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bilalm\\.nuget\\packages\\": {}
+    "C:\\Users\\bmben\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bilalm\\Desktop\\SnipperAPI\\SnipperAPI.csproj",
+      "projectUniqueName": "C:\\Users\\bmben\\Desktop\\Multiverse Zoom\\Projects\\SnipperAPI\\SnipperAPI.csproj",
       "projectName": "SnipperAPI",
-      "projectPath": "C:\\Users\\bilalm\\Desktop\\SnipperAPI\\SnipperAPI.csproj",
-      "packagesPath": "C:\\Users\\bilalm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bilalm\\Desktop\\SnipperAPI\\obj\\",
+      "projectPath": "C:\\Users\\bmben\\Desktop\\Multiverse Zoom\\Projects\\SnipperAPI\\SnipperAPI.csproj",
+      "packagesPath": "C:\\Users\\bmben\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bmben\\Desktop\\Multiverse Zoom\\Projects\\SnipperAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\bilalm\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\bmben\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
