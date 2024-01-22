@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Mvc;
 using SnipperAPI.Data;
 using SnipperAPI.Models;
 
-
 namespace SnipperAPI.Controllers;
 [ApiController]
 [Route("[controller]")]
@@ -17,6 +16,7 @@ public class SnipperController : ControllerBase
     [HttpGet("GetSnipps")]
     public IEnumerable<Snipp> GetSnipps()
     {
+
 
         string sql = @"
         SELECT [ItemId],
