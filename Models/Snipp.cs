@@ -1,6 +1,6 @@
-namespace SnipperAPI
+namespace SnipperAPI.Models
 {
-    public partial class SnipperAPI
+    public partial class Snipp
     {
         public int ItemId { get; set; } // Might not be necessary
         public string Language { get; set; } = "";
