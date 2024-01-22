@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using DotnetAPI.Data;
 
 namespace DotnetAPI.Controllers;
 [ApiController]
@@ -14,7 +15,7 @@ public class SnipperController : ControllerBase
     [HttpGet("TestConnection")]
     public DateTime TestConnection()
     {
-        return _dapper.LoadSingleData<DateTime>("SELECT GETDATE()");
+        return _dapper.LoadDataSingle<DateTime>("SELECT GETDATE()");
     }
 
 
