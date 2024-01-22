@@ -1,7 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using DotnetAPI.Data;
+using SnipperAPI.Data;
+using SnipperAPI.Models;
 
-namespace DotnetAPI.Controllers;
+namespace SnipperAPI.Controllers;
 [ApiController]
 [Route("[controller]")]
 public class SnipperController : ControllerBase
@@ -12,12 +13,19 @@ public class SnipperController : ControllerBase
         _dapper = new DataContextDapper(config);
     }
 
-    [HttpGet("TestConnection")]
-    public DateTime TestConnection()
+    [HttpGet("GetSnipps")]
+    public IEnumerable<Snipp> GetSnipps()
     {
-        return _dapper.LoadDataSingle<DateTime>("SELECT GETDATE()");
+
+
+        string sql = @"
+        SELECT [ItemId],
+                [Language],
+                [Code]
+            FROM SnipperSchema.Snipps";
+
+        IEnumerable<Snipp> snipps = _dapper.LoadData<Snipp>(sql);
+        return snipps;
     }
-
-
 
 }
