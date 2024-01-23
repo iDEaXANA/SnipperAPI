@@ -3,6 +3,7 @@ using Dapper;
 using Microsoft.Data.SqlClient;
 
 namespace SnipperAPI.Data
+
 {
     class DataContextDapper
     {
